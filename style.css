@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  display: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.kategorije {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ikone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.kategorija {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color: #000;
+  transition: 0.2s;
+}
+
+.kategorija:hover {
+  background-color: #eee;
+}
+
+.kategorija span {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.meni-sekcija {
+  padding: 30px 20px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.qr-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  text-align: center;
+}
